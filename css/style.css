@@ -1,0 +1,194 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1.5;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+    font-size: 12px;
+    font-family: "Montserrat", sans-serif;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+/*Diseñando el nav*/
+.alto {
+    padding: 0px;
+}
+
+.n { font-size: 35px; padding-bottom: 10px;}
+
+nav {
+    width: 120px;
+    height: 100%;
+    position: fixed;
+    background-color: #222;
+}
+
+.negro {background-color: #000000;}
+.negro:hover{background-color: #222;}
+
+a {
+    text-decoration: none;
+    display: block;
+    padding: 12px 24px;
+    color: #ffffff;
+}
+a:hover{background-color: #000000;}
+
+.centrar { text-align: center;}
+
+/*Diseñando el header*/
+
+main{margin-left: 120px; padding: 10%;}
+     header { background-color: #000000;}
+            h1 { color: #ffffff; text-align: center; font-size: 64px; padding: 10px;}
+                .blanco { color: #ffffff; text-align: center; font-size: 15px; padding: 10px;}
+
+.foto-portada{width: 100%;}
+
+/*Diseñando el aside*/
+aside {padding-top: 80px; padding-bottom: 80px;}
+     h2{font-size: 30px; margin: 10px 0px;padding: 16px;}
+        hr{margin: 10px 0px; width: 19%; opacity: 0.60;}
+           .p{margin: 15px 0px; font-size: 15px; text-align: justify;}
+              .color-letrap {color: #757575;}
+                           h3{margin: 10px 0px;padding: 16px 0px;font-size: 24px;}
+
+                           .ralla-corta { background-color: #fff;}
+                           .ralla-larga1 {width: 95%; height: 28px;background-color: #616161;}
+                           .ralla-larga2 {width: 85%; height: 28px;background-color: #616161;}
+                           .ralla-larga3 {width: 70%; height: 28px;background-color: #616161;}
+/*Diseñamdo barra de proyectos*/
+   .proyectos {margin: 16px 0px; padding: 16px 0px; display: flex; width: 100%; justify-content: space-evenly; text-align: center;              
+               background-color: #f1f1f1; color: #000000; font-size: 24px;}
+            .margen{margin: 16px 0px;}
+                   .pr{font-size: 15px;}
+                       button{margin: 16px 0px; padding: 12px 24px;}
+                       .fa {font-size: 14px;}
+
+/*Diseñando precio*/
+
+ul li {border-bottom: 1px solid #ddd; text-align: center; color: #000000;}
+.precio {display: flex; width: 100%; justify-content: space-around;}
+        .basic{background-color: #616161; padding: 32px 16px; font-size: 24px; color: #fff;}
+              .tabla {width: 47%; background-color: #fff; opacity: 0.60;}
+                    li{padding: 16px;}
+                      .li{margin: 10px 0px; font-size: 30px;}
+                          .boton-precio{padding: 24px 16px;}
+                                       .boton-precio2{padding: 12px 24px; border: none;}
+                    
+                    .tabla:hover{opacity: 1;}
+                    .boton-precio2:hover{background-color: #000000; color: #fff;}                   
+
+/*Diseñando reputacion*/
+
+.image-rep{ border-radius: 50%; float: left; margin-right: 13px;}
+          .repu{margin: 15px 0; text-align: justify; color: #757575; font-size: 18px;}
+             img {vertical-align: middle;}
+                .pe{font-size: 15px;}
+
+/*Diseñando el seption*/
+
+section {margin-top: 150px;}
+  section img {width: 50%; height: auto; margin: 0 0 12px; padding: 0 8px;}
+       article{display: inline-flex;}
+
+/*Diseñando el contacto*/       
+
+.pon{margin-right: 12px;}
+  .c{color: #757575;}
+
+/*Diseñando el formulario*/
+
+.g{font-size: 15px; margin: 16px 0;}
+  input{padding: 16px 8px; background-color: #ffffff; border: none; width: 100%;}
+
+/*Diseñando el footer*/
+
+footer{margin-top: 120px;}
+  .i{display: inline-block; font-size: 25px;}
+    .ins{display: inline-block;}
+     .ins:hover{text-decoration: underline;}
+     button:hover{opacity: 0.60;}
+
+@media screen and (max-width:920px){
+    main{padding: 40px;}
+}    
+
+@media screen and (max-width:600px){
+    nav img {display: none;}
+     nav {display:flex;justify-content: space-between; text-align: center; width: 100%; position: fixed; top: 0; height: 30px;
+           background-color: #000000; opacity: 0.70;}
+           .fa-home:before {display: none; padding: none;}
+           .fa-user-alt:before {display: none; padding: none;}
+           .fa-eye:before {display: none; padding: none;}
+           nav .fa-envelope:before {display: none; padding: none;}
+            a{padding: 8px 16px; display: flex; width: 100%; flex-wrap: nowrap;color: #757575;}
+             a:hover{background-color: #757575; color: #f1f1f1;}
+              .negro {background-color: #000000;}
+               .negro:hover{background-color: #757575; color: #f1f1f1;}
+               
+
+               main{margin: 0; padding: 10px;}
+
+               .proyectos {display: block; width: 100%; padding: 0;}
+               .margen{border-bottom: 1px solid #616161;}
+ 
+               
+    .precio {display: block; width: 100%;}
+              .tabla {width: 100%;margin-top: 10px}
+                            
+section {margin-top: 150px;}
+  section img {width: 90%; height: auto; margin: 0 0 12px;}
+       article{display: block; text-align: center;}
+               
+.g{font-size: 15px; margin: 16px 0;}
+    input{padding: 16px 8px; background-color: #ffffff; border: none; width: 95%;}
+     
+      .ins{display: contents;}
+
+}
